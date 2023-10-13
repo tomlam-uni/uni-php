@@ -8,6 +8,6 @@ class FirstProjectQuery
 {
     public static function testFunction()
     {
-        Log::info('this is the project being injected');
+        Log::info('this is from github');
     }
 }
