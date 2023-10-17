@@ -8,6 +8,6 @@ class FirstProjectQuery
 {
     public static function testFunction()
     {
-        Log::info('this is from github');
+        Log::info('this is second-branch from github');
     }
 }
