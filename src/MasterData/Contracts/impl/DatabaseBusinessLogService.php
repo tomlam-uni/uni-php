@@ -2,7 +2,7 @@
 
 namespace impl;
 
-use BusinessLogService;
+use src\MasterData\Contracts\BusinessLogService;
 use Illuminate\Support\Facades\Log;
 
 class DatabaseBusinessLogService implements BusinessLogService
