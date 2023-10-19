@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Exceptions;
+namespace App\Exception;
 
 use Exception;
-use Throwable;
-use Illuminate\Support\Facades\Lang;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 
 class AppException extends Exception
 {
