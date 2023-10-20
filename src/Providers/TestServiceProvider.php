@@ -13,7 +13,7 @@ class TestServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\TestProject\Contracts\impl\DefaultTestService', function($app) {
+        $this->app->singleton('App\TestProject\Contracts\TestService', function($app) {
             return new \App\TestProject\Contracts\impl\DefaultTestService();
         });
     }
