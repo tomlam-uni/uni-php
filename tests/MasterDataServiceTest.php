@@ -1,7 +1,5 @@
 <?php
 
-namespace Uni\Tests;
-
 use Illuminate\Container\Container;
 use Uni\MasterData\Contracts\FileStorageService;
 use Uni\MasterData\Contracts\MDMQueryService;
