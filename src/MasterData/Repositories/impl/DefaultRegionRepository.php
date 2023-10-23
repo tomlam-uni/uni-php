@@ -24,7 +24,7 @@ class DefaultRegionRepository implements RegionRepository
     {
         $p = Region::where(['code' => $parent, 'level' => $level - 1])->first();
         if ($p == null)
-            throw new \App\Exceptions\AppException(AppException::MASTERDATA_REGION_INVALID, 400);
+            throw new AppException(AppException::MASTERDATA_REGION_INVALID, 400);
         return Region::where(['parent' => $p->id, 'level' => $level])->orderBy('display_order', 'asc')->get();
     }
 
@@ -32,7 +32,7 @@ class DefaultRegionRepository implements RegionRepository
     {
         $r = Region::where('code', $region)->first();
         if ($r == null)
-            throw new \App\Exceptions\AppException(AppException::MASTERDATA_REGION_INVALID, 400);
+            throw new AppException(AppException::MASTERDATA_REGION_INVALID, 400);
         return DeliveryArea::where('region_id', $r->id)->orderBy('display_order', 'asc')->get();
     }
 

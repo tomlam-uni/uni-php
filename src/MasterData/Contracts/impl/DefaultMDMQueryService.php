@@ -78,7 +78,7 @@ class DefaultMDMQueryService implements MDMQueryService
     {
         try {
             return $this->regionRepository->findByParent($country_code, Region::LEVEL_PROVINCE)->toArray();
-        } catch (\App\Exceptions\AppException $e) {
+        } catch (AppException $e) {
             throw $e;
         } catch (\Exception $e) {
             Log::error('Query provinces failed, Caused by: ' . $e->getMessage());
@@ -90,7 +90,7 @@ class DefaultMDMQueryService implements MDMQueryService
     {
         try {
             return $this->regionRepository->findByParent($province_code, Region::LEVEL_CITY)->toArray();
-        } catch (\App\Exceptions\AppException $e) {
+        } catch (AppException $e) {
             throw $e;
         } catch (\Exception $e) {
             Log::error('Query cities failed, Caused by: ' . $e->getMessage());
@@ -102,7 +102,7 @@ class DefaultMDMQueryService implements MDMQueryService
     {
         try {
             return $this->regionRepository->findDeliveryAreasByRegion($province_code)->toArray();
-        } catch (\App\Exceptions\AppException $e) {
+        } catch (AppException $e) {
             throw $e;
         } catch (\Exception $e) {
             Log::error('Query delivery areas failed, Caused by: ' . $e->getMessage());
@@ -114,7 +114,7 @@ class DefaultMDMQueryService implements MDMQueryService
     {
         try {
             return $this->regionRepository->findWarehousesByProvinceCode($province_code)->toArray();
-        } catch (\App\Exceptions\AppException $e) {
+        } catch (AppException $e) {
             throw $e;
         } catch (\Exception $e) {
             Log::error('Query warehouses failed, Caused by: ' . $e->getMessage());
@@ -126,7 +126,7 @@ class DefaultMDMQueryService implements MDMQueryService
     {
         try {
             return $this->regionRepository->findDeliveryAreasByWarehouse($warehouse_id)->toArray();
-        } catch (\App\Exceptions\AppException $e) {
+        } catch (AppException $e) {
             throw $e;
         } catch (\Exception $e) {
             Log::error('Query delivery areas failed, Caused by: ' . $e->getMessage());

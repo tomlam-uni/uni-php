@@ -6,7 +6,6 @@ use Uni\MasterData\Models\Ranking;
 use Uni\MasterData\Repositories\RankingRepository;
 use Uni\Exceptions\AppException;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
 
 class DefaultRankingRepository implements RankingRepository
 {
