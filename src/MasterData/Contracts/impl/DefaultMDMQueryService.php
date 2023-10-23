@@ -1,18 +1,18 @@
 <?php
 
-namespace App\MasterData\Contracts\impl;
+namespace Uni\MasterData\Contracts\impl;
 
-use App\MasterData\Contracts\MDMQueryService;
-use App\MasterData\Models\Address;
-use App\MasterData\Models\MessageTemplate;
-use App\MasterData\Models\Region;
-use App\MasterData\Repositories\AddressRepository;
-use App\MasterData\Repositories\AgreementRepository;
-use App\MasterData\Repositories\DictionaryRepository;
-use App\MasterData\Repositories\MessageTemplateRepository;
-use App\MasterData\Repositories\RegionRepository;
-use App\MasterData\Repositories\VersionRepository;
-use App\Exceptions\AppException;
+use Uni\MasterData\Contracts\MDMQueryService;
+use Uni\MasterData\Models\Address;
+use Uni\MasterData\Models\MessageTemplate;
+use Uni\MasterData\Models\Region;
+use Uni\MasterData\Repositories\AddressRepository;
+use Uni\MasterData\Repositories\AgreementRepository;
+use Uni\MasterData\Repositories\DictionaryRepository;
+use Uni\MasterData\Repositories\MessageTemplateRepository;
+use Uni\MasterData\Repositories\RegionRepository;
+use Uni\MasterData\Repositories\VersionRepository;
+use Uni\Exceptions\AppException;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Log;
 

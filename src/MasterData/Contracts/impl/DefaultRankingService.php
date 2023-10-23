@@ -1,11 +1,11 @@
 <?php
 
-namespace App\MasterData\Contracts\impl;
+namespace Uni\MasterData\Contracts\impl;
 
-use App\MasterData\Contracts\RankingService;
-use App\MasterData\Models\Ranking;
-use App\MasterData\Repositories\RankingRepository;
-use App\Exceptions\AppException;
+use Uni\MasterData\Contracts\RankingService;
+use Uni\MasterData\Models\Ranking;
+use Uni\MasterData\Repositories\RankingRepository;
+use Uni\Exceptions\AppException;
 use Illuminate\Container\Container;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;

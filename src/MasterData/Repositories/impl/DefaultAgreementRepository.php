@@ -1,9 +1,9 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\Agreement;
-use App\MasterData\Repositories\AgreementRepository;
+use Uni\MasterData\Models\Agreement;
+use Uni\MasterData\Repositories\AgreementRepository;
 
 class DefaultAgreementRepository implements AgreementRepository
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\MasterData\Contracts;
+namespace Uni\MasterData\Contracts;
 
 interface RankingService
 {

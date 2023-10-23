@@ -1,12 +1,12 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\AccessCode;
-use App\MasterData\Models\Address;
-use App\MasterData\Repositories\AddressRepository;
-use App\Exceptions\AppException;
-use App\Support\YlsIdeas\FeatureFlags\Facades\Features;
+use Uni\MasterData\Models\AccessCode;
+use Uni\MasterData\Models\Address;
+use Uni\MasterData\Repositories\AddressRepository;
+use Uni\Exceptions\AppException;
+use Uni\Support\YlsIdeas\FeatureFlags\Facades\Features;
 use Illuminate\Support\Facades\DB;
 
 class DefaultAddressRepository implements AddressRepository

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\Dictionary;
-use App\MasterData\Repositories\DictionaryRepository;
+use Uni\MasterData\Models\Dictionary;
+use Uni\MasterData\Repositories\DictionaryRepository;
 
 class DefaultDictionaryRepository implements DictionaryRepository
 {

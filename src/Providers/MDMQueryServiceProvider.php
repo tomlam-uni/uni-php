@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
-use App\MasterData\Contracts\impl\DefaultMDMQueryService;
+use Uni\MasterData\Contracts\impl\DefaultMDMQueryService;
 use Illuminate\Support\ServiceProvider;
 
 class MDMQueryServiceProvider extends ServiceProvider
@@ -14,7 +14,7 @@ class MDMQueryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Contracts\MDMQueryService', function ($app) {
+        $this->app->singleton('Uni\MasterData\Contracts\MDMQueryService', function ($app) {
             return new DefaultMDMQueryService();
         });
     }

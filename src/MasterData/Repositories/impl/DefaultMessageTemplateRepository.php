@@ -1,9 +1,9 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\MessageTemplate;
-use App\MasterData\Repositories\MessageTemplateRepository;
+use Uni\MasterData\Models\MessageTemplate;
+use Uni\MasterData\Repositories\MessageTemplateRepository;
 
 class DefaultMessageTemplateRepository implements MessageTemplateRepository
 {

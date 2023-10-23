@@ -1,9 +1,9 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Repositories\FileInfoRepository;
-use App\MasterData\Models\FileInfo;
+use Uni\MasterData\Repositories\FileInfoRepository;
+use Uni\MasterData\Models\FileInfo;
 
 class DefaultFileInfoRepository implements FileInfoRepository
 {

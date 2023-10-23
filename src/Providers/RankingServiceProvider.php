@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class RankingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Contracts\RankingService', function ($app) {
-            return new \App\MasterData\Contracts\impl\DefaultRankingService();
+        $this->app->singleton('Uni\MasterData\Contracts\RankingService', function ($app) {
+            return new \Uni\MasterData\Contracts\impl\DefaultRankingService();
         });    }
 }

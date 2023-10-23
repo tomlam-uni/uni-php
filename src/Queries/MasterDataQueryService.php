@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Queries;
+namespace Uni\Queries;
 
-use App\MasterData\Models\Ranking;
-use App\Exceptions\AppException;
-use App\Support\YlsIdeas\FeatureFlags\Facades\Features;
+use Uni\MasterData\Models\Ranking;
+use Uni\Exceptions\AppException;
+use Uni\Support\YlsIdeas\FeatureFlags\Facades\Features;
 use Illuminate\Support\Facades\DB;
 
 class MasterDataQueryService

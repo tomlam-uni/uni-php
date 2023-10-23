@@ -1,6 +1,6 @@
 <?php
 
-namespace App\MasterData\Models;
+namespace Uni\MasterData\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;

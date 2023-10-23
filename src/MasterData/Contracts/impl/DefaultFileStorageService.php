@@ -1,12 +1,12 @@
 <?php
 
-namespace App\MasterData\Contracts\impl;
+namespace Uni\MasterData\Contracts\impl;
 
-use App\MasterData\Models\FileInfo;
-use App\MasterData\Repositories\FileInfoRepository;
-use App\Exceptions\AppException;
+use Uni\MasterData\Models\FileInfo;
+use Uni\MasterData\Repositories\FileInfoRepository;
+use Uni\Exceptions\AppException;
 use Illuminate\Container\Container;
-use App\MasterData\Contracts\FileStorageService;
+use Uni\MasterData\Contracts\FileStorageService;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Log;
 

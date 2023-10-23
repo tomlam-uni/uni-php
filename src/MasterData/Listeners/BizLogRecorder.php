@@ -1,10 +1,10 @@
 <?php
 
-namespace App\MasterData\Listeners;
+namespace Uni\MasterData\Listeners;
 
-use App\Common\Event\BizLogEvent;
-use App\MasterData\Contracts\BusinessLogService;
-use App\Jobs\BusinessLogJob;
+use Uni\Common\Event\BizLogEvent;
+use Uni\MasterData\Contracts\BusinessLogService;
+use Uni\Jobs\BusinessLogJob;
 
 class BizLogRecorder
 {

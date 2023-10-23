@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class AgreementRepositoryProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Repositories\AgreementRepository', function ($app) {
-            return new \App\MasterData\Repositories\impl\DefaultAgreementRepository();
+        $this->app->singleton('Uni\MasterData\Repositories\AgreementRepository', function ($app) {
+            return new \Uni\MasterData\Repositories\impl\DefaultAgreementRepository();
         });
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\MasterData\Contracts\impl;
+namespace Uni\MasterData\Contracts\impl;
 
-use App\MasterData\Contracts\BusinessLogService;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Uni\MasterData\Contracts\BusinessLogService;
 
 class DatabaseBusinessLogService implements BusinessLogService
 {

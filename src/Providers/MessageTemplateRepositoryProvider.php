@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class MessageTemplateRepositoryProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Repositories\MessageTemplateRepository', function ($app) {
-            return new \App\MasterData\Repositories\impl\DefaultMessageTemplateRepository();
+        $this->app->singleton('Uni\MasterData\Repositories\MessageTemplateRepository', function ($app) {
+            return new \Uni\MasterData\Repositories\impl\DefaultMessageTemplateRepository();
         });
     }
 }

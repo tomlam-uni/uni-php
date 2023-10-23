@@ -1,10 +1,10 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\Ranking;
-use App\MasterData\Repositories\RankingRepository;
-use App\Exceptions\AppException;
+use Uni\MasterData\Models\Ranking;
+use Uni\MasterData\Repositories\RankingRepository;
+use Uni\Exceptions\AppException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 

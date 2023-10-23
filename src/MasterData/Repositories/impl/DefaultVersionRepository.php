@@ -1,9 +1,9 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\Version;
-use App\MasterData\Repositories\VersionRepository;
+use Uni\MasterData\Models\Version;
+use Uni\MasterData\Repositories\VersionRepository;
 
 class DefaultVersionRepository implements VersionRepository
 {

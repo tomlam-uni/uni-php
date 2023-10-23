@@ -1,12 +1,12 @@
 <?php
 
-namespace App\MasterData\Repositories\impl;
+namespace Uni\MasterData\Repositories\impl;
 
-use App\MasterData\Models\Region;
-use App\MasterData\Models\DeliveryArea;
-use App\MasterData\Models\Warehouse;
-use App\MasterData\Repositories\RegionRepository;
-use App\Exceptions\AppException;
+use Uni\MasterData\Models\Region;
+use Uni\MasterData\Models\DeliveryArea;
+use Uni\MasterData\Models\Warehouse;
+use Uni\MasterData\Repositories\RegionRepository;
+use Uni\Exceptions\AppException;
 
 class DefaultRegionRepository implements RegionRepository
 {

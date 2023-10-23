@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class FileStorageServiceProvider  extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Contracts\FileStorageService', function ($app) {
-            return new \App\MasterData\Contracts\impl\DefaultFileStorageService();
+        $this->app->singleton('Uni\MasterData\Contracts\FileStorageService', function ($app) {
+            return new \Uni\MasterData\Contracts\impl\DefaultFileStorageService();
         });
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Uni\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,8 +13,8 @@ class FileInfoRepositoryProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('App\MasterData\Repositories\FileInfoRepository', function ($app) {
-            return new \App\MasterData\Repositories\impl\DefaultFileInfoRepository();
+        $this->app->singleton('Uni\MasterData\Repositories\FileInfoRepository', function ($app) {
+            return new \Uni\MasterData\Repositories\impl\DefaultFileInfoRepository();
         });
     }
 }

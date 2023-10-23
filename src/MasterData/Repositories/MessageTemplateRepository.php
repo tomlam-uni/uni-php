@@ -1,6 +1,6 @@
 <?php
 
-namespace App\MasterData\Repositories;
+namespace Uni\MasterData\Repositories;
 
 interface MessageTemplateRepository
 {
