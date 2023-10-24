@@ -55,7 +55,7 @@ class MasterDataServiceTest extends TestCase
     }
 
     /**
-     * GetCountries test.
+     * getCountries test.
      *
      * @return void
      */
